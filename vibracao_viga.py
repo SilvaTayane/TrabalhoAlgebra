@@ -38,7 +38,7 @@ for i in range(n):
     K[idx, idx] += Ke
     M[idx, idx] += Me
 
-# Aplicar condições de contorno (engastada na ponta esquerda)
+# Aplicar condições de contorno (engatada na ponta esquerda)
 K = K[2:, 2:]
 M = M[2:, 2:]
 
@@ -64,6 +64,6 @@ for i in range(3):
 plt.title('Modos de vibração da viga')
 plt.xlabel('Comprimento (m)')
 plt.ylabel('Deslocamento (arbitrário)')
-plt.legend()
+plt.legend(title='Modos')
 plt.grid()
 plt.show()
